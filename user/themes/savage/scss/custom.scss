@@ -1,0 +1,12 @@
+$color-primary: #e51843;
+$font-headline: "Montserrat", sans-serif;
+$font-body: "Open Sans", sans-serif;
+
+@import "global";
+@import "navigation";
+@import "banner";
+@import "teaser";
+@import "search";
+@import "form";
+@import "post";
+@import "footer";

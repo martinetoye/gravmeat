@@ -1,0 +1,14 @@
+<div class="text container">
+<div class="col-xs-6">
+{{ content }}
+</div>
+<div class="col-xs-6">
+<div class="modular-row callout">
+    {% set image = page.media.images|first %}
+    {% if image %}
+        {{ image.html('','',''~page.header.image_class) }}
+    {% endif %}
+
+</div>
+</div>
+</div>

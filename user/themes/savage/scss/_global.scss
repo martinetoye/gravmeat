@@ -1,0 +1,24 @@
+body {
+  font-family: $font-body;
+  background: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-headline;
+  font-weight: bold;
+}
+
+span.label {
+  background: $color-primary;
+  a {
+    color: white;
+  }
+}
+
+.content {
+  background: white;
+}
+
+.content img {
+  width: 100%;
+}

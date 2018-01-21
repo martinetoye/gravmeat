@@ -1,0 +1,11 @@
+email: martin.toye@me.com
+fullname: 'Martin Toye'
+title: Administrator
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$GzSjJ8lkPFtEXT0FPR.I/Oy5H0eJtntZhVf5..Py/J8Z5sjVoXJM.

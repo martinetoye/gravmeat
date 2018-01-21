@@ -1,0 +1,27 @@
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var rename = require('gulp-rename');
+var sourcemaps = require('gulp-sourcemaps');
+var browserSync = require('browser-sync');
+
+// Static Server + watching sass/html files
+gulp.task('serve', function () {
+    browserSync.init(null, {
+        proxy: 'localhost', // 'dev.site.com' in your example
+        port: 5000
+    });
+});
+
+
+gulp.task('sass-compile', function(){
+    return gulp.src('sass/index.sass')
+      .pipe(sourcemaps.init())
+      .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+      .pipe(rename('theme.css'))
+      .pipe(sourcemaps.write('./maps'))
+      .pipe(gulp.dest('css'))
+});
+
+gulp.task('default', ['sass-compile', 'serve'], function () {
+    gulp.watch("sass/*/*.sass", ['sass-compile']);
+});

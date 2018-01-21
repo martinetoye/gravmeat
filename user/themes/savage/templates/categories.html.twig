@@ -1,0 +1,24 @@
+{% extends 'partials/base.html.twig' %}
+{% set tags = taxonomy.taxonomy['tag']|ksort %}
+
+{% block banner %}
+    <h1>{{ site.title }}</h1>
+    <h2>Posts by category</h2>
+{% endblock %}
+
+{% block content %}
+    {% for tag, items in tags %}
+        <div class="category">
+            <div class="category__heading">
+                <h2 id="{{ tag }}">{{ tag | title }}</h2>
+            </div>
+
+            <div class="teasers">
+                {% for path, slug in items %}
+                    {% set post = grav['pages'].get(path) %}
+                    {% include 'partials/teaser.html.twig' %}
+                {% endfor %}
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}

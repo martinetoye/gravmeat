@@ -1,0 +1,37 @@
+title: Savage Adulting
+description: "The hardcore guide to growing up, you moron"
+author:
+  name: Mike Crittenden
+  email: 'mikecrittenden@gmail.com'
+metadata:
+    description: 'A ruthless, insulting guide to being an adult and doing grown up things'
+taxonomies: [tag]
+
+# Owner/author information
+owner:
+  name:           Martin Toye
+  email:          martin.toye@me.com
+  description:    Pretty much a full blown adult
+  # Social networking links used in footer. Update and remove as you like.
+  instagram:        martinetoye
+  facebook:       mtoye1
+  github:         martinetoye
+  linkedin:   martinetoye
+
+logo: /user/themes/savage/images/logo.png
+
+# For external links add external: true
+links:
+  - title: Categories
+    url: /categories
+  - title: Search
+    url: /search
+  - title: About
+    url: /about
+  - title: Request
+    url: /request
+  - title: Feed
+    url: /blog.rss
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]

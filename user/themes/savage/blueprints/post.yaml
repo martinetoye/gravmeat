@@ -1,0 +1,17 @@
+title: Post
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+              fields:
+                header.featured:
+                  type: Filepicker
+                  label: Choose a featured image

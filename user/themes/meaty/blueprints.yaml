@@ -1,0 +1,12 @@
+name: Meaty
+version: 0.1.0
+description: The theme for martinetoye.com
+icon: rebel
+author:
+  name: Martin Toye
+  email: 'martin.toye@me.com'
+homepage: https://github.com/martinetoye/meaty
+keywords: grav, theme, etc
+bugs: https://github.com/martinetoye/meaty/issues
+readme: https://github.com/martinetoye/meaty/blob/master/README.md
+license: MIT

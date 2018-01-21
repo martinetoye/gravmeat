@@ -1,0 +1,75 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+<!DOCTYPE html>
+<html lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
+<head>
+{% block head %}
+    <meta charset="utf-8" />
+    <title>
+        {% if page.collection.params.taxonomies %}
+            Tagged with "{{ page.collection.params.taxonomies.tag.0|capitalize }}" |
+        {% elseif header.title %}
+            {{ header.title }} |
+        {% endif %}
+        {{ site.title }}</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include 'partials/metadata.html.twig' %}
+
+    <link rel="icon" type="image/png" href="{{ url('theme://images/logo.png') }}" />
+    <link rel="shortcut icon" href="{{ url('theme://images/favicon.ico') }}">
+    <link rel="canonical" href="{{ page.url(true, true) }}" />
+    <link rel="apple-touch-icon-precomposed" href="{{ theme_url }}/images/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ theme_url }}/images/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ theme_url }}/images/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ theme_url }}/images/apple-touch-icon-144x144-precomposed.png">
+
+    {% block stylesheets %}
+        {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css') %}
+        {% do assets.addCss('theme://css/theme.css') %}
+    {% endblock %}
+    {{ assets.css() }}
+
+    {% block javascripts %}
+        {% do assets.addJs('jquery', 101) %}
+        {% do assets.addJs('theme://js/script.js') %}
+    {% endblock %}
+    {{ assets.js() }}
+
+{% endblock head%}
+</head>
+
+<body id="top" class="{{ page.header.body_classes }}">
+
+
+    {% block header %}
+        {% include 'partials/header.html.twig' %}
+    {% endblock %}
+
+        {% block body %}
+                {% block content %}{% endblock %}
+        {% endblock %}
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+            {% block footer %}
+                <ul class="footer__socialLinks">
+                  <li class="footer__socialLinks--links"><a href="">FACEBOOK</a></li>
+                  <li class="footer__socialLinks--links"><a href="">instagram</a></li>
+                  <li class="footer__socialLinks--links"><a href="">GITHUB</a></li>
+                  <li class="footer__socialLinks--links"><a href="">LINKEDIN</a></li>
+                </ul>
+                <p class="footer__copyright">Copyright &copy; {{ now|date('Y') }} martinetoye.com</p>
+            {% endblock %}
+          </div>
+        </div>
+        </div>
+    </footer>
+
+    {% block bottom %}
+        {{ assets.js('bottom') }}
+    {% endblock %}
+
+</body>
+</html>
