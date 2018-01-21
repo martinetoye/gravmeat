@@ -1,10 +1,10 @@
 absolute_urls: false
 
 home:
-  alias: '/blog'
+  alias: '/home'
 
 pages:
-  theme: savage
+  theme: meaty
   markdown_extra: false
   process:
     markdown: true
