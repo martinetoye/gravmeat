@@ -8,7 +8,7 @@ var sourcemaps = require('gulp-sourcemaps');
 gulp.task('serve', ['sass'], function() {
 
     browserSync.init(["css/*.css", "js/*.js", "sass/*.sass"],{
-    proxy: "localhost:8080", // makes a proxy for localhost
+    proxy: "localhost/gravmeat", // makes a proxy for localhost
 });
 });
 
