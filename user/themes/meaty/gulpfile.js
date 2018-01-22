@@ -22,6 +22,32 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('css'));
 });
 
-gulp.task('default', ['sass', 'serve'], function() {
+gulp.task('default', ['mamp','sass', 'serve'], function() {
     gulp.watch("sass/**/*.sass", ['sass']);
 });
+
+
+/* !!!! CONFIGURE !!!!
+================================ */
+var options = {};
+options.user = 'martintoye';
+options.port = 80;
+options.site_path = '/Users/martintoye/Documents/GitHub/gravmeat/'; // something like /Users/username/sites/mymampsite
+
+// Modules
+var gulp = require('gulp');
+var mamp = require('gulp-mamp');
+
+gulp.task('config', function(cb){
+    mamp(options, 'config', cb);
+});
+
+gulp.task('start', function(cb){
+    mamp(options, 'start', cb);
+});
+
+gulp.task('stop', function(cb){
+    mamp(options, 'stop', cb);
+});
+
+gulp.task('mamp', ['config', 'start']);
