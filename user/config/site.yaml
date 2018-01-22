@@ -22,15 +22,15 @@ logo: /user/themes/savage/images/logo.png
 
 # For external links add external: true
 links:
-  - title: Categories
-    url: /categories
-  - title: Search
-    url: /search
+  - title: Home
+    url: /
   - title: About
+    url: /search
+  - title: Portfolio
     url: /about
-  - title: Request
+  - title: Blog
     url: /request
-  - title: Feed
+  - title: Say Hi
     url: /blog.rss
 
 include: [".htaccess"]
