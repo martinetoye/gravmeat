@@ -3,11 +3,12 @@ var browserSync = require('browser-sync').create();
 var sass        = require('gulp-sass');
 var rename = require('gulp-rename');
 var sourcemaps = require('gulp-sourcemaps');
+var autoprefixer = require('gulp-autoprefixer');
 
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function() {
 
-    browserSync.init(["css/*.css", "js/*.js", "sass/*.sass"],{
+    browserSync.init(["css/*.css", "js/*.js", "sass/*.sass","templates/**/*.twig"],{
     proxy: "localhost:80", // makes a proxy for localhost
 });
 });
@@ -18,12 +19,14 @@ gulp.task('sass', function() {
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(rename('theme.css'))
+    .pipe(autoprefixer())
     .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('css'));
 });
 
 gulp.task('default', ['mamp','sass', 'serve'], function() {
     gulp.watch("sass/**/*.sass", ['sass']);
+    gulp.watch("templates/**/*.twig");
 });
 
 
@@ -31,6 +34,7 @@ gulp.task('default', ['mamp','sass', 'serve'], function() {
 ================================ */
 var options = {};
 options.user = 'martintoye';
+options.password = 'Me11isa10';
 options.port = 80;
 options.site_path = '/Users/martintoye/Documents/GitHub/gravmeat/'; // something like /Users/username/sites/mymampsite
 

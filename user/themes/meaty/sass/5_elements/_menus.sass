@@ -1,9 +1,11 @@
 //Menu Icon
 .hamburger
-  position: fixed
+  position: absolute
   z-index: 4
   top: 10%
   right: 20%
+.hamburger.change
+  position: fixed
 
 .bar1, .bar2, .bar3
   width: 35px
@@ -47,6 +49,9 @@
   color: $primary
   font-size: 32px
   font-family: $font-intro
+  transition: color 0.5s
+.menu-item>a:hover
+  color: $secondary
 
 .menu-item
   padding: 10px 0

@@ -11,6 +11,7 @@
   "devDependencies": {
     "browser-sync": "^2.23.5",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
     "gulp-connect-php": "^1.0.1",
     "gulp-mamp": "0.0.5",
     "gulp-rename": "^1.2.2",
