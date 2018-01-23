@@ -1,0 +1,70 @@
+html
+  font-size: $defaultfontsize
+
+body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6
+  font-size-adjust: 0.5
+
+body
+  // 16px
+  font-size: 1em
+  line-height: 1.25em
+  font-family: $font-open
+  +mq('tablet')
+    line-height: 1.375em
+
+h1
+  // 32px
+  font-size: 2em
+  line-height: 1.25em
+  font-family: $font-intro
+  +mq('tablet')
+    // 40px
+    font-size: 2.5em
+    line-height: 1.125em
+  +mq('desktop')
+    // 48px
+    font-size: 3em
+    line-height: 1.05em
+
+  h2
+    // 26px
+    font-size: 1.625em
+    line-height: 1.15384615em
+    font-family: $font-intro
+    +mq('tablet')
+      // 32px
+      font-size: 2em
+      line-height: 1.25em
+    +mq('desktop')
+      // 36px
+      font-size: 2.25em
+      line-height: 1.25em
+
+  h3
+    // 22px
+    font-size: 1.375em
+    line-height: 1.13636364em
+    +mq('tablet')
+      // 24px
+      font-size: 1.5em
+      line-height: 1.25em
+    +mq('dekstop')
+      // 28px
+      font-size: 1.75em
+      line-height: 1.25em
+
+    h4
+      //18px
+      font-size: 1.125em
+      line-height:	1.11111111em
+      +mq('tablet')
+        line-height: 	1.22222222em
+
+    blockquote
+      //20px
+      font-size: 1.25em
+      line-height: 1.25em
+      +mq('tablet')
+        // 24px
+        font-size: 1.5em
+        line-height: 1.45833333em
