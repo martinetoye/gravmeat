@@ -84,7 +84,7 @@ cache:
   gzip: false
   allow_webserver_gzip: false
 twig:
-  cache: true
+  cache: false
   debug: true
   auto_reload: true
   autoescape: false
