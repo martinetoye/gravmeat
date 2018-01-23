@@ -12,26 +12,25 @@ form:
           autocomplete: on
           type: text
           validate:
-            required: true
+            required: false
 
         - name: email
           label: Email
           placeholder: Enter your email address
           type: email
           validate:
-            required: true
+            required: false
 
         - name: message
           label: Message
           placeholder: Your Message
           type: textarea
           validate:
-            required: true
+            required: false
 
     buttons:
         - type: submit
           value: Submit
-          classes: test
 
     process:
         - email:
@@ -47,6 +46,7 @@ form:
             extension: txt
             body: "{% include 'forms/data.txt.twig' %}"
         - message: Thank you for your feedback!
-        - display: thankyou
+        - redirect: '/'
+---
 
 ---

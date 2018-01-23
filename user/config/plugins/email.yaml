@@ -1,8 +1,8 @@
 enabled: true
-from: hello@savageadulting.com
-from_name: Savage Adulting
-to: mikecrittenden@gmail.com
-to_name: Mike Crittenden
+from: hello@martinetoye.com
+from_name: Martin Toye
+to: martin.toye@me.com
+to_name: Martin Toye
 mailer:
   engine: mail
   smtp:
