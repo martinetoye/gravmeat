@@ -6,7 +6,7 @@ form:
     name: contact-form
     fields:
         - name: name
-          label: Name
+          label:  
           placeholder: Enter your name
           autofocus: on
           autocomplete: on
@@ -21,12 +21,17 @@ form:
           validate:
             required: true
 
+        - name: message
+          label: Message
+          placeholder: Your Message
+          type: textarea
+          validate:
+            required: true
+
     buttons:
         - type: submit
           value: Submit
           classes: test
-        - type: reset
-          value: Reset
 
     process:
         - email:
