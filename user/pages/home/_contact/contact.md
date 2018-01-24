@@ -1,52 +1,69 @@
 ---
 title: 'Say Hi'
 id: contact
-
 form:
     name: contact-form
+    action: '/home'
+    template: form-messages
+    refresh-prevention: true
     fields:
-        - name: name
-          label:  
-          placeholder: Enter your name
-          autofocus: on
-          autocomplete: on
-          type: text
-          validate:
-            required: false
+            - name: name
+              label: Name
+              placeholder: Enter your name
+              autofocus: on
+              autocomplete: on
+              type: text
+              validate:
+                required: true
 
-        - name: email
-          label: Email
-          placeholder: Enter your email address
-          type: email
-          validate:
-            required: false
+            - name: email
+              label: email
+              placeholder: Enter your email address
+              autofocus: on
+              autocomplete: on
+              type: text
+              validate:
+                required: true
 
-        - name: message
-          label: Message
-          placeholder: Your Message
-          type: textarea
-          validate:
-            required: false
+            - name: message
+              label: message
+              placeholder: Enter your message
+              autofocus: on
+              autocomplete: on
+              type: Textarea
+              validate:
+                required: true
 
     buttons:
-        - type: submit
-          value: Submit
+          submit:
+                  - type: submit
+                    value: Submit
 
     process:
-        - email:
-            from: "{{ config.plugins.email.from }}"
-            to:
-              - "{{ config.plugins.email.from }}"
-              - "{{ form.value.email }}"
-            subject: "[Feedback] {{ form.value.name|e }}"
-            body: "{% include 'forms/data.html.twig' %}"
-        - save:
-            fileprefix: feedback-
-            dateformat: Ymd-His-u
-            extension: txt
-            body: "{% include 'forms/data.txt.twig' %}"
-        - message: Thank you for your feedback!
-        - redirect: '/'
+          message: 'Thanks'
 ---
 
----
+<div id="form-result"></div>
+
+<script>
+$(document).ready(function(){
+
+    var form = $('#contact-form');
+    form.submit(function(e) {
+        // prevent form submission
+        e.preventDefault();
+
+        // submit the form via Ajax
+        $.ajax({
+            url: form.attr('action'),
+            type: form.attr('method'),
+            dataType: 'html',
+            data: form.serialize(),
+            success: function(result) {
+                // Inject the result in the HTML
+                $('#form-result').html(result);
+            }
+        });
+    });
+});
+</script>
