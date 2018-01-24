@@ -3,7 +3,7 @@ namespace Grav\Theme;
 
 use Grav\Common\Theme;
 
-class Savage extends Theme
+class Meaty extends Theme
 {
     // Access plugin events in this class
 }

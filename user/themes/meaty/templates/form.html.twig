@@ -1,0 +1,15 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block pagetop %}
+{% include 'partials/pageHeader.html.twig' %}
+{% endblock %}
+
+{% block body %}
+  <div class="col-sm-6 col-sm-offset-3">
+    {% include "forms/form.html.twig" %}
+  </div>
+{% endblock %}
+
+{% block content %}
+  {{ content }}
+{% endblock %}
