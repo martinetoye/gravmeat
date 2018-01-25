@@ -44,16 +44,21 @@
 
     {% block header %}
         {% include 'partials/header.html.twig' %}
+        {% if page.template == 'page' or page.template == 'form' or page.template == 'default' %}
+        {% include 'partials/pageHeader.html.twig' %}
+        {% endif %}
     {% endblock %}
 
         {% block body %}
                 {% block content %}{% endblock %}
         {% endblock %}
+
+                    {% block footer %}
     <footer class="footer">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
-            {% block footer %}
+
                 <ul class="footer__socialLinks">
                   <li class="footer__socialLinks--links"><a href="">FACEBOOK</a></li>
                   <li class="footer__socialLinks--links"><a href="">instagram</a></li>
@@ -61,12 +66,12 @@
                   <li class="footer__socialLinks--links"><a href="">LINKEDIN</a></li>
                 </ul>
                 <p class="footer__copyright">Copyright &copy; {{ now|date('Y') }} martinetoye.com</p>
-            {% endblock %}
+
           </div>
         </div>
         </div>
     </footer>
-
+        {% endblock %}
     {% block bottom %}
         {{ assets.js('bottom') }}
     {% endblock %}

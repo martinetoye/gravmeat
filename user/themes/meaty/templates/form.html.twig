@@ -1,15 +1,24 @@
 {% extends 'partials/base.html.twig' %}
 
-{% block pagetop %}
-{% include 'partials/pageHeader.html.twig' %}
-{% endblock %}
+
+
 
 {% block body %}
-  <div class="col-sm-6 col-sm-offset-3">
+
+<div class="container">
+<div class="row">
+<div class="col-sm-6">
+    {{ page.content }}
+</div>
+</div>
+</div>
+
+  <div class="container">
+  <div class="row">
+  <div class="col-sm-6">
     {% include "forms/form.html.twig" %}
   </div>
-{% endblock %}
+  </div>
+  </div>
 
-{% block content %}
-  {{ content }}
 {% endblock %}
