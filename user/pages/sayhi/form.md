@@ -1,5 +1,5 @@
 ---
-title: Contact Form
+title: Say Hi
 cache_enable: false
 
 form:
@@ -33,8 +33,6 @@ form:
     buttons:
         - type: submit
           value: Submit
-        - type: reset
-          value: Reset
 
     process:
         - save:

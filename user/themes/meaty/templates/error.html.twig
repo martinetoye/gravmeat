@@ -1,8 +1,18 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
-    <div class="lead text-center">
-        <h1>Error!</h1>
-        {{ page.content }}
-    </div>
+    <div class="error__wrapper">
+      <div class="error__wrapper--inner">
+      <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>ERROR!</h1>
+                <h3>{{ page.header.description }}</h3>
+                  {{ page.content }}
+                  {% include 'partials/simplesearch_searchbox.html.twig' %}
+            </div>
+        </div>
+      </div>
+      </div><!-- End Inner -->
+    </div><!-- End Wrapper -->
 {% endblock %}
