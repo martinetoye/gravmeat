@@ -6,33 +6,46 @@ form:
     name: contact
     template: form-messages
     refresh_prevention: true
-
     fields:
-        - name: name
-          label: Name
-          placeholder: Enter your name
-          autocomplete: on
-          type: text
-          validate:
-            required: true
+          columns:
+              type: columns
+              fields:
+                  column0:
+                      type: column
+                      fields:
+                          firstname:
+                              label: name
+                              placeholder: Enter Your Name
+                              autocomplete: on
+                              type: text
+                              validate:
+                                  required: true
+                                  pattern: '[A-Za-z]{3,}'
 
-        - name: email
-          label: Email
-          placeholder: Enter your email address
-          type: email
-          validate:
-            required: true
+                          lastname:
+                              label: email
+                              placeholder: Enter Email
+                              autocomplete: on
+                              type: text
+                              validate:
+                                  required: true
 
-        - name: message
-          label: Message
-          placeholder: Enter your message
-          type: textarea
-          validate:
-            required: true
+                  column1:
+                      type: column
+                      fields:
+                          lastname:
+                              label: message
+                              placeholder: Enter Message
+                              autocomplete: on
+                              type: textarea
+                              rows: 4
+                              validate:
+                                  required: true
 
     buttons:
         - type: submit
           value: Submit
+          classes: center-button
 
     process:
         - save:

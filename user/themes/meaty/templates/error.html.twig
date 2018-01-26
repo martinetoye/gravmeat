@@ -6,7 +6,7 @@
       <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <h1>ERROR!</h1>
+                <h1>ERROR! {{ header.http_response_code }}</h1>
                 <h3>{{ page.header.description }}</h3>
                   {{ page.content }}
                   {% include 'partials/simplesearch_searchbox.html.twig' %}
