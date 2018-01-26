@@ -22,25 +22,36 @@ form:
                                   required: true
                                   pattern: '[A-Za-z]{3,}'
 
-                          lastname:
+                          email:
                               label: email
                               placeholder: Enter Email
                               autocomplete: on
-                              type: text
+                              type: email
                               validate:
                                   required: true
 
                   column1:
                       type: column
                       fields:
-                          lastname:
-                              label: message
-                              placeholder: Enter Message
+                          phone:
+                              label: phone
+                              placeholder: Enter Phone Number
                               autocomplete: on
-                              type: textarea
+                              type: phone
                               rows: 4
                               validate:
                                   required: true
+
+                          subject:
+                              label: subject
+                              placeholder: Subject
+                              autocomplete: false
+                              type: text
+          message:
+              label: message
+              placeholder: Enter Your message
+              autocomplete: false
+              type: textarea
 
     buttons:
         - type: submit
@@ -56,7 +67,7 @@ form:
         - message: Thank you for getting in touch!
         - reset: true
 ---
-<div id="form-result"></div>
+
 
 <script>
 $(document).ready(function(){

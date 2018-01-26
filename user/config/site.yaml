@@ -27,13 +27,13 @@ links:
   - title: Home
     url: /
   - title: About
-    url: /search
+    url: /#about
   - title: Portfolio
-    url: /about
+    url: /portfolio
   - title: Blog
-    url: /request
+    url: /blog
   - title: Say Hi
-    url: /sayhi
+    url: /contact
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
