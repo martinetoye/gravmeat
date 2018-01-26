@@ -27,11 +27,13 @@
     {% block stylesheets %}
         {% do assets.addCss('theme://css/font-awesome.min.css') %}
         {% do assets.addCss('theme://css/theme.css') %}
+        {% do assets.addCss('theme://css/animsition.min.css') %}
     {% endblock %}
     {{ assets.css() }}
 
     {% block javascripts %}
         {% do assets.addJs('jquery', 101) %}
+        {% do assets.addJs('theme://js/animsition.min.js') %}
         {% do assets.addJs('theme://js/script.js') %}
     {% endblock %}
     {{ assets.js() }}
@@ -40,7 +42,7 @@
 </head>
 
 <body id="top" class="{{ page.header.body_classes }}">
-
+<div class="animsition">
 
     {% block header %}
         {% include 'partials/header.html.twig' %}
@@ -75,6 +77,6 @@
     {% block bottom %}
         {{ assets.js('bottom') }}
     {% endblock %}
-
+  </div>
 </body>
 </html>
