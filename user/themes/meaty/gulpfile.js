@@ -10,6 +10,7 @@ gulp.task('serve', ['sass'], function() {
 
     browserSync.init(["css/*.css", "js/*.js", "sass/*.sass","templates/*.twig"],{
     proxy: "localhost:80", // makes a proxy for localhost
+    browser: "google chrome"
 });
 });
 

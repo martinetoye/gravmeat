@@ -1,0 +1,16 @@
+<div class="recentpost__wrapper wrapper">
+  <div class="container">
+  <h2>{{ page.title }}</h2>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row">
+        {% for post in page.find('/portfolio').children.order('date', 'desc').slice(0, 3) %}
+            <div class="col-md-4">
+                <h3>{{ post.title }}</h3>
+            </div>
+        {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

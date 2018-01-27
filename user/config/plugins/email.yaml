@@ -4,13 +4,13 @@ from_name: Martin Toye
 to: martin.toye@me.com
 to_name: Martin Toye
 mailer:
-  engine: mail
+  engine: smtp
   smtp:
-    server: localhost
-    port: 25
+    server: mailtrap.io
+    port: 2525
     encryption: none
-    user: ''
-    password: ''
+    user: 'b0ebbfd77a5207'
+    password: '782f7cf05d0e14'
   sendmail:
     bin: '/usr/sbin/sendmail'
 content_type: text/html

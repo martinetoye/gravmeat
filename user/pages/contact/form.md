@@ -59,6 +59,9 @@ form:
           classes: center-button
 
     process:
+        - email:
+            subject: "[Site Contact Form] {{ form.value.name|e }}"
+            body: "{% include 'forms/data.html.twig' %}"
         - save:
             fileprefix: contact-
             dateformat: Ymd-His-u
