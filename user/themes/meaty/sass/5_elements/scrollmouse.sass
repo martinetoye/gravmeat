@@ -1,0 +1,33 @@
+.mouse
+  fill: transparent
+  stroke: $secondary
+  transition: all .5s
+.dot
+  fill: $secondary
+.mouse, .dot
+  stroke: #898989
+  stroke-width: 10px
+
+.cls-2, .dot
+  fill: #898989
+
+.scroll-down-button
+  transform: scale(0.15)
+  transform-origin: bottom center
+
+svg:hover .mouse,
+ fill: $secondary
+svg:hover .dot
+ fill: $primary
+ stroke: $primary
+
+@keyframes mymove
+    0%
+      transform: translateY(0)
+    50%
+      transform: translateY(190px)
+    100%
+      transform: translateY(0)
+
+.dot
+  animation: mymove 5s infinite
