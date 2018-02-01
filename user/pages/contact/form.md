@@ -53,6 +53,17 @@ form:
               autocomplete: false
               type: textarea
 
+          captcha:                      
+              name: g-recaptcha-response
+              label: Captcha
+              type: captcha
+              recaptcha_site_key: 6LcdcRoUAAAAAAYP46MPwFqwaL3MttxtC-NJHMvh
+              recaptcha_not_validated: 'Captcha not valid!'
+              validate:
+                   required: true
+
+
+
     buttons:
         - type: submit
           value: Submit

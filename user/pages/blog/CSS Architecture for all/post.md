@@ -1,5 +1,5 @@
 ---
-title: "Wah, I'm tired, my baby won't sleep"
+title: "CSS Architecture"
 featured: baby.jpg
 date: 04/13/2017 3:14pm
 taxonomy:
