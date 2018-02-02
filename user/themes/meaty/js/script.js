@@ -14,8 +14,22 @@ jQuery(document).ready(function($) {
      //return false;
  });
 
+ //Banner SVG Desk
+    $("#banner__message").hide();
+    $(".blog__banner--link").mouseover(function(){
+        var title  = $(this).data('title');
+        //console.log (title);
+        $("#banner__message").show();
+        $('#banner__message').append(title);
+    })
+    $(".blog__banner--link").mouseout(function(){
+      $("#banner__message").hide();
+      $("#banner__message").empty();
+    })
 });
 
+
+//Animsition Script
 $(document).ready(function() {
   $(".animsition").animsition({
     inClass: 'fade-in',
