@@ -15,14 +15,14 @@ jQuery(document).ready(function($) {
  });
 
  //Banner SVG Desk
-    $("#banner__message").hide();
-    $(".blog__banner--link").mouseover(function(){
+    $("#banner__message").show();
+    $(".svg__banner--link").mouseover(function(){
         var title  = $(this).data('title');
         //console.log (title);
-        $("#banner__message").show();
+        $("#banner__message").show(1);
         $('#banner__message').append(title);
     })
-    $(".blog__banner--link").mouseout(function(){
+    $(".svg__banner--link").mouseout(function(){
       $("#banner__message").hide();
       $("#banner__message").empty();
     })
