@@ -14,6 +14,21 @@ jQuery(document).ready(function($) {
      //return false;
  });
 
+ //Banner SVG Desk
+    $("#banner__message").show();
+    $(".svg__banner--link").mouseover(function(){
+        var title  = $(this).data('title');
+        //console.log (title);
+        $("#banner__message").show(1);
+        $('#banner__message').append(title);
+    })
+    $(".svg__banner--link").mouseout(function(){
+      $("#banner__message").hide();
+      $("#banner__message").empty();
+    })
+});
+
+
 //Animsition Script
 $(document).ready(function() {
   $(".animsition").animsition({
