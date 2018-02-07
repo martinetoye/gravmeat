@@ -1,11 +1,13 @@
 ---
 title: 'website portfolio two'
+media_order: AJIC_FINAL_web.png
+featured: AJIC_FINAL_web.png
 date: '04/14/2017 5:00pm'
+metadata:
+    description: 'Test Decription'
 taxonomy:
     tag:
         - money
-metadata:
-    description: 'Test Decription'
 ---
 
 >&quot;The cold harsh reality is that we have to balance the budget. &quot;

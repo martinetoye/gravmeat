@@ -6,7 +6,6 @@ content:
         custom:
             - _banner
             - _about
-            - _blogrecent
             - _portfoliorecent
             - _contact
 body_classes: modular

@@ -1,7 +1,7 @@
 ---
-title: 'Website portfolio one'
-media_order: 'baby.jpg,Logo.png'
-featured: Logo.png
+title: 'Website portfolio one 2'
+media_order: 'baby.jpg,Logo.png,default-image.png'
+featured: default-image.png
 date: '04/13/2017 3:14pm'
 taxonomy:
     tag:

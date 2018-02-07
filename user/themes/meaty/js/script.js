@@ -14,18 +14,6 @@ jQuery(document).ready(function($) {
      //return false;
  });
 
- //Banner SVG Desk
-    $("#banner__message").show();
-    $(".svg__banner--link").mouseover(function(){
-        var title  = $(this).data('title');
-        //console.log (title);
-        $("#banner__message").show(1);
-        $('#banner__message').append(title);
-    })
-    $(".svg__banner--link").mouseout(function(){
-      $("#banner__message").hide();
-      $("#banner__message").empty();
-    })
 });
 
 
@@ -35,7 +23,7 @@ $(document).ready(function() {
     inClass: 'fade-in',
     outClass: 'fade-out',
     inDuration: 1500,
-    outDuration: 800,
+    outDuration: 1500,
     linkElement: '.animsition-link',
     // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
     loading: true,
