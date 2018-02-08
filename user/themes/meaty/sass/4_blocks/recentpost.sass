@@ -1,1 +1,36 @@
 .recentpost__wrapper h2
+
+/* relevant styles */
+
+
+
+.img__description_layer
+  position: absolute
+  top: 0
+  bottom: 5px
+  left: 15px
+  right: 15px
+  background: rgba(135, 135, 135, 1)
+  color: $primary
+  visibility: hidden
+  opacity: 0
+  display: flex
+  align-items: center
+  justify-content: center
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s
+
+
+.img__wrap:hover .img__description_layer
+  visibility: visible
+  opacity: 1
+
+
+.img__description
+  transition: .2s
+  transform: translateY(1em)
+
+
+.img__wrap:hover .img__description
+  transform: translateY(0)
