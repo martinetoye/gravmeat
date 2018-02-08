@@ -1,7 +1,7 @@
 ---
-title: 'Website portfolio one 2'
-media_order: 'baby.jpg,Logo.png,default-image.png'
-featured: default-image.png
+title: 'Gurbeck Country Foods'
+media_order: 'gurbeck portfolio featured.png'
+featured: 'gurbeck portfolio featured.png'
 date: '04/13/2017 3:14pm'
 taxonomy:
     tag:

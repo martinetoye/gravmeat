@@ -1,7 +1,7 @@
 ---
-title: 'Website portfolio one'
-media_order: 'baby.jpg,Logo.png'
-featured: Logo.png
+title: 'Malookoo Dance Fitness'
+media_order: 'malookoo portfolio featured.png'
+featured: 'malookoo portfolio featured.png'
 date: '04/13/2017 3:14pm'
 taxonomy:
     tag:
