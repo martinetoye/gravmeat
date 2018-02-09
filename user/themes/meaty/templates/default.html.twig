@@ -15,14 +15,4 @@
 
 {% block content %}
     {{ page.content }}
-
-    <div class="teasers">
-        {% for post in collection %}
-            {% include 'partials/teaser.html.twig' %}
-        {% endfor %}
-    </div>
-
-    {% if config.plugins.pagination.enabled and collection.params.pagination %}
-        {% include 'partials/pagination.html.twig' with {'pagination':collection.params.pagination} %}
-    {% endif %}
 {% endblock %}

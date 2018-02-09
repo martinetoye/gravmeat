@@ -1,54 +1,20 @@
-{% block banner %}
-  <div class="banner">
-    <div class="container">
+<div class="banner">
+  <div class="container">
+    <div class="row">
 
-      <div class="row">
-        <div class="col-xs-12">
-            <div class="banner-inner">
+      <div class="col-md-6">
+        <div class="banner__title">
+          <h3 class="banner__title--intro">Hello, I'm</h3>
+          <h1 class="banner__title--owner">{{ site.owner.name }}</h1>
+          <p>{{ site.owner.description }}</p>
+          <ul class="banner__sociallinks">
+           {% for sitem in site.social %}
+            <li class="social__link--{{ sitem.class }}"><a class="fa fa-{{ sitem.class }}" href="{{ sitem.url }}"></a></li>
+           {% endfor %}
+         </ul>
+        </div>
+      </div><!-- End Column -->
 
-          <div class="banner__title">
-            <h1>{{ page.title }}<span class="banner-bold-title">{{ page.header.description }}</span></h1>
-
-          <div class="banner__socialLinks--wrapper">
-              <h3>Let's Get Social</h3>
-              <ul class="banner__socialLinks--links">
-                <li class="banner__socialLinks--link"><a href="https://www.facebook.com/{{ site.owner.facebook }}" class="fa fa-facebook" target="blank"></a></li>
-                <li class="banner__socialLinks--link"><a href="https://www.instagram.com/{{ site.owner.instagram }}" class="fa fa-instagram" target="_blank"></a></li>
-                <li class="banner__socialLinks--link"><a href="https://www.github.com/{{ site.owner.instagram }}" class="fa fa-github" target="_blank"></a></li>
-                <li class="banner__socialLinks--link"><a href="https://linkedin.com/in/{{ site.owner.linkedin }}" class="fa fa-linkedin" target="_blank"></a></li>
-              </ul>
-          </div>
-          </div><!-- End Banner Title -->
-
-
-
-          <svg id="scrollDown" xmlns="http://www.w3.org/2000/svg" width="263" height="426" viewBox="0 0 263 426">
-            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-          <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c140 79.160451, 2017/05/06-01:08:21        ">
-             <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                <rdf:Description rdf:about=""/>
-             </rdf:RDF>
-          </x:xmpmeta>
-
-          <?xpacket end="w"?></metadata>
-          <defs>
-            </defs>
-            <g class="mouse-button">
-            <rect id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" class="mouse" x="23" y="37" width="217" height="386" rx="100" ry="100"/>
-            <path class="cls-2" d="M135,37h-7V4h7V37Z"/>
-            <ellipse class="dot" cx="129.5" cy="132" rx="18.5" ry="19"/>
-            </g>
-          </svg>
-
-          </div>
-          </div><!-- End Banner Inner -->
-
-
-
-        </div><!-- End Column -->
-      </div><!-- End Row -->
-
-
-    </div><!-- End Container -->
-  </div><!-- End Banner -->
-{% endblock %}
+    </div><!-- End Row -->
+  </div><!-- End Container -->
+</div><!-- End Banner -->

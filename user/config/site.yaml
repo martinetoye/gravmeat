@@ -11,16 +11,20 @@ taxonomies: [tag]
 owner:
   name:           Martin Toye
   email:          martin.toye@me.com
-  description:    Pretty much a full blown adult
+  description:    Professional Front End Developer
   phone: '07864873669'
   address: Banstead, Surrey
   # Social networking links used in footer. Update and remove as you like.
-  instagram:        martinetoye
-  facebook:       mtoye1
-  github:         martinetoye
-  linkedin:   martinetoye
+social:
+  - title: Facebook
+    url: /
+    class: facebook
+  - title: twitter
+    url: /
+    class: twitter
 
-logo: /user/themes/savage/images/logo.png
+
+logo: /user/themes/meaty/images/logo.png
 
 # For external links add external: true
 links:
@@ -34,6 +38,9 @@ links:
     url: /blog
   - title: Say Hi
     url: /contact
+  - title: Hire Me
+    url: /
+    class: button__blue
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
