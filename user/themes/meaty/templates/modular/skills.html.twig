@@ -1,0 +1,23 @@
+<div class="skills">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-12">
+          <h2>{{ page.title }}</h2>
+          <p>{{ page.content }}</p>
+      </div><!-- End Column -->
+      <div class="skills__skills">
+        {% for skill in page.header.skills %}
+        <div class="col-md-3">
+          <div class="skills__skills--skill">
+            <i class="fa fa-{{ skill.class }}"></i>
+            <h4>{{ skill.title }}</h4>
+            <p>{{ skill.description }}</p>
+          </div>
+        </div><!-- End Column -->
+        {% endfor %}
+      </div>
+
+    </div><!-- End Row -->
+  </div><!-- End Container -->
+</div><!-- End Skills -->

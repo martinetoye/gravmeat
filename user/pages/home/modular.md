@@ -6,5 +6,8 @@ content:
     order:
         custom:
             - _banner
+            - _about
+            - _skills
+            - _testimonials
 ---
 

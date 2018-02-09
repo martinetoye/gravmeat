@@ -15,3 +15,17 @@ jQuery(document).ready(function($) {
  });
 
 });
+
+
+$(document).ready(function() {
+    var autoplaySlider = $('#lightSlider').lightSlider({
+        auto:true,
+        loop:true,
+        speed:2000,
+        pauseOnHover: true,
+        onBeforeSlide: function (el) {
+            $('#current').text(el.getCurrentSlideCount());
+        }
+    });
+    $('#total').text(autoplaySlider.getTotalSlideCount());
+});

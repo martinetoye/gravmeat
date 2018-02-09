@@ -9,12 +9,12 @@
           <p>{{ site.owner.description }}</p>
           <ul class="banner__sociallinks">
            {% for sitem in site.social %}
-            <li class="social__link--{{ sitem.class }}"><a class="fa fa-{{ sitem.class }}" href="{{ sitem.url }}"></a></li>
+            <li class="social__link social__link--{{ sitem.class }}"><a class="fa fa-{{ sitem.class }}" href="{{ sitem.url }}"></a></li>
            {% endfor %}
          </ul>
-        </div>
+        </div><!-- End Banner title -->
       </div><!-- End Column -->
-
+      <div class="col-md-6"></div>
     </div><!-- End Row -->
   </div><!-- End Container -->
 </div><!-- End Banner -->

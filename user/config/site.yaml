@@ -14,6 +14,7 @@ owner:
   description:    Professional Front End Developer
   phone: '07864873669'
   address: Banstead, Surrey
+  image: /user/themes/meaty/images/me.png
   # Social networking links used in footer. Update and remove as you like.
 social:
   - title: Facebook
@@ -22,7 +23,12 @@ social:
   - title: twitter
     url: /
     class: twitter
-
+  - title: Instagram
+    url: /
+    class: instagram
+  - title: github
+    url: /
+    class: github
 
 logo: /user/themes/meaty/images/logo.png
 
@@ -40,7 +46,7 @@ links:
     url: /contact
   - title: Hire Me
     url: /
-    class: button__blue
+    class: btn btn__blue
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]

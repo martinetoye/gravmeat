@@ -1,0 +1,22 @@
+<div class="testimonials">
+  <div class="container">
+    <div class="row">
+
+    <div class="col-md-12">
+      <h2 class="testimonials__title">{{ page.title }}</h2>
+    </div><!-- End Column-->
+    <div class="col-md-12">
+      <ul class="testimonials__slider" id="lightSlider">
+        {% for testi in page.header.testimonials %}
+          <li  class="testmonials__slider--slide">
+            <h3>{{ testi.title }}</h3>
+            <h4>{{ testi.company }}</h4>
+            <p>{{ testi.description }}</p>
+          </li>
+
+          {% endfor %}
+        </ul>
+    </div><!-- End Column -->
+    </div><!-- End Row -->
+  </div><!-- End Container -->
+</div><!-- End Testimonials -->

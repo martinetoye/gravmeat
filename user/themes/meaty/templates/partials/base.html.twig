@@ -24,8 +24,10 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ theme_url }}/images/apple-touch-icon-114x114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ theme_url }}/images/apple-touch-icon-144x144-precomposed.png">
 
+
     {% block stylesheets %}
         {% do assets.addCss('theme://css/font-awesome.min.css') %}
+        {% do assets.addCss('theme://css/lightslider.css') %}
         {% do assets.addCss('theme://css/theme.css') %}
         {% do assets.addCss('theme://css/animsition.min.css') %}
     {% endblock %}
@@ -33,7 +35,7 @@
 
     {% block javascripts %}
         {% do assets.addJs('jquery', 101) %}
-        {% do assets.addJs('theme://js/animsition.min.js') %}
+        {% do assets.addJs('theme://js/lightslider.min.js') %}
         {% do assets.addJs('theme://js/script.js') %}
     {% endblock %}
     {{ assets.js() }}

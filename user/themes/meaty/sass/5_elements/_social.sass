@@ -1,0 +1,31 @@
+.social__link--facebook
+  background: $facebook
+.social__link--twitter
+  background: $twitter
+.social__link--instagram
+  background: $instagram
+.social__link--github
+  background: $github
+  &:hover
+    background: transparent!important
+    box-shadow: 0 0 0 2pt $github
+
+.social__link
+  margin: 0 10px
+  transform: rotate(45deg)
+  transition: all 0.4s
+  width: 50px
+  height: 50px
+  text-align: center
+  border-radius: 5px
+  display: inline-block
+  &:hover
+    background: transparent!important
+    box-shadow: 0 0 0 2pt $github
+.social__link a
+  transform: rotate(-45deg)
+  color: $white
+  padding: 15px
+  font-size: 20px
+  &:hover
+    color: $black
