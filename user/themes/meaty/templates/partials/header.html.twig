@@ -2,12 +2,19 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-md-2">
+      <div class="col-sm-1 col-md-2">
         <img src="{{ site.logo }}" class="header__logo" />
       </div><!-- End Column -->
 
-      <div class="col-md-10">
+      <div class="col-sm-11 col-md-10">
+
         <div class="header__menu">
+          <div class="hamburger">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+          </div>
+
             <ul class="header__menu--nav">
                 {% for mitem in site.links %}
                 <li class="header__menu--nav--item">
@@ -15,9 +22,9 @@
                 </li>
                 {% endfor %}
             </ul>
-        </div>
+        </div><!-- End Header Menu -->
       </div><!-- End Column -->
 
     </div><!-- End Row -->
-  </div><!-- End Container -->
+  </div><!-- End Container -->  
 </div><!-- End Header -->

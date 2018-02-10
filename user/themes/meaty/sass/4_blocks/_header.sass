@@ -1,5 +1,6 @@
 .header
   padding: 10px 0
+  position: relative
 .header__logo
   max-height: 80px
   width: auto
@@ -8,13 +9,44 @@
   float: right
   text-transform: uppercase
   font-weight: 600
+  position: relative
 .header__menu--nav
   list-style: none
+  display: none
+  +mq('tablet')
+    display: block
 .header__menu--nav--item
   display: inline
-  padding: 0 20px
+  padding: 0 5px
+  +mq('dekstop')
+    padding: 0 20px
 
 .header__menu--nav--item a
   transition: all 0.4s
 .header__menu--nav--item a:hover
   color: $blue
+
+
+//Mobile Navigation
+
+.header__menu--mobile
+ position: absolute
+ transition: all 0.6s
+ left: -200vh
+ z-index: 100
+ background: $grey
+ width: 100vw
+ height: 100vh
+ +mq('tablet')
+   display: none
+
+.header__menu--mobile.open
+  left: 0
+  position: fixed
+
+.header__menu--mobile--nav
+  list-style: none
+  margin-top: 50px
+
+.header__menu--mobile--nav--item
+  padding: 20px 0

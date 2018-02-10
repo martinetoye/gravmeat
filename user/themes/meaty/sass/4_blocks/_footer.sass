@@ -6,9 +6,16 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3da8c1', endColorstr='#2f64b2',GradientType=1 )/* IE6-9 */
   padding: 20px 0
   color: $white
-  
+
 .footer__madewith
-  text-align: right
+  text-align: center
+  +mq('tablet')
+    text-align: right
 
 .footer__madewith i
   color: $pink
+
+.footer__copyright
+  text-align: center
+  +mq('tablet')
+    text-align: left

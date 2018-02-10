@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
   //Menu Open
   $(".hamburger").on("click", function(){
         $(".hamburger").toggleClass("change");
-        $(".menu__wrapper").toggleClass("open");
+        $(".header__menu--mobile").toggleClass("open");
       });
       //Scroll Down Button
       $('#scrollDown').on('click',function(){

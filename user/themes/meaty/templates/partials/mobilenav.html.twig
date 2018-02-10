@@ -1,0 +1,9 @@
+<div class="header__menu--mobile">
+    <ul class="header__menu--mobile--nav">
+        {% for mitem in site.links %}
+        <li class="header__menu--mobile--nav--item">
+          <a href="{{ mitem.url }}" class="{{ mitem.class }}">{{ mitem.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+  </div><!-- End Mobile Nav -->

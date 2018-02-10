@@ -16,7 +16,7 @@ skills:
     description: Git Test skill
   - title: wordpress
     class: wordpress
-    description: Test wordpress skill
+    description: Test wordpress 
   - title: grav
     class: grav
     description: Test grav skill
