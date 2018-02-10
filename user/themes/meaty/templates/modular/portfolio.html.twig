@@ -1,0 +1,46 @@
+<div class="portfolio">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-12">
+          <h2 class="portfolio__heading">{{ page.title }}</h2>
+      </div><!-- End Column -->
+      <div class="portfolio__featured--imgs">
+      {% for pitem in page.header.portfolio %}
+        {% if mobile_detect() == 'phone' %}
+            {% if loop.index0 is divisibleby(2) %}
+              <div class="row">
+            {% endif %}
+        {% else %}
+            {% if loop.index0 is divisibleby(3) %}
+              <div class="row">
+            {% endif %}
+        {% endif %}
+        <div class="col-xs-6 col-md-4">
+          <div class="portfolio__featured--img">
+          <a href="{{ pitem.url }}">
+              <img class="img-responsive portfolio__featured--img--img" src="{{ pitem.img }}">
+              <div class="portfolio__featured--img--overlay">
+                <p class="portfolio__featured--img--overlay--text">{{ pitem.title }}</p>
+                <i class="portfolio__featured--img--overlay--icon fa fa-link"></i>
+              </div>
+          </a>
+        </div>
+      </div>
+
+        {% if mobile_detect() == 'phone' %}
+          {% if loop.index is divisibleby(2) or loop.last %}
+            </div>
+          {% endif %}
+        {% else %}
+          {% if loop.index is divisibleby(3) or loop.last %}
+            </div>
+          {% endif %}
+        {% endif %}
+
+
+      {% endfor %}
+    </div>
+    </div><!-- End Row -->
+  </div><!-- End Container -->
+</div><!-- End Portfolio Modular -->
