@@ -4,17 +4,24 @@ jQuery(document).ready(function($) {
         $(".hamburger").toggleClass("change");
         $(".header__menu--mobile").toggleClass("open");
       });
-      //Scroll Down Button
-      $('#scrollDown').on('click',function(){
-        //const height = window.innerHeight;
-        //const vhPixels = height * 1.5
-        //window.scrollBy(0, vhPixels);
-        //$("html, body").animate({ scrollBottom: 0 }, 800);
-      $('html, body').animate({ scrollTop:  $('#scrollDown').offset().top - -85 }, 1000);
-     //return false;
- });
-
+//links for Header Menu
+$('a.testclass').on('click', function(event){
+  $(".hamburger").toggleClass("change");
+  $(".header__menu--mobile").toggleClass("open");
+  var href = $(this).attr('href');
+  var scrollto = $(href).offset().top;
+  var speed = 1000;
+  var delay = 200
+  $('html,body').delay(delay).animate({scrollTop: scrollto},speed);
+  return false
+  event.preventDefault();
 });
+
+
+
+});//End
+
+
 
 
 $(document).ready(function() {
