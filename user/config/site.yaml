@@ -18,16 +18,16 @@ owner:
   # Social networking links used in footer. Update and remove as you like.
 social:
   - title: Facebook
-    url: /
+    url: https://facebook.com/mtoye1
     class: facebook
   - title: twitter
-    url: /
+    url: https://twitter.com/martinetoye
     class: twitter
   - title: Instagram
-    url: /
+    url: https://instagram.com/martinetoye
     class: instagram
   - title: github
-    url: /
+    url: https://github.com/martinetoye
     class: github
 
 logo: /user/themes/meaty/images/logo.png
