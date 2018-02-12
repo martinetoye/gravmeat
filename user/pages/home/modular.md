@@ -8,6 +8,8 @@ content:
             - _banner
             - _about
             - _skills
+            - _coffee
             - _portfolio
             - _testimonials
 ---
+
