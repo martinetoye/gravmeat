@@ -1,5 +1,6 @@
 .portfolio
   padding: 80px 0
+  position: relative
 .portfolio__heading
   font-weight: 300
   padding-bottom: 50px
@@ -61,3 +62,30 @@
   border: 1px solid $white
   border-radius: 100%
   padding: 5px
+
+.portfolio__leftpanel
+  display: none
+  +mq('tablet')
+    display: block
+    background-image: url('../images/sidepanel.png')
+    background-repeat: no-repeat
+    height: 100%
+    width: 100%
+    overflow: hidden
+    position: absolute
+    left: 0
+    z-index: -1
+
+.portfolio__rightpanel
+  display: none
+  +mq('tablet')
+    display: block
+    background-image: url('../images/sidepanel.png')
+    background-repeat: repeat-y
+    transform: rotate(180deg)
+    height: 100%
+    width: 100%
+    overflow: hidden
+    position: absolute
+    right: 0
+    z-index: -1
