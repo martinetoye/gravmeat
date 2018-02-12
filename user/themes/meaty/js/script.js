@@ -30,6 +30,23 @@ $(document).ready(function() {
         loop:true,
         speed:2000,
         pauseOnHover: true,
+        responsive : [
+         {
+             breakpoint:800,
+             settings: {
+                 item:3,
+                 slideMove:1,
+                 slideMargin:1,
+               }
+         },
+         {
+             breakpoint:480,
+             settings: {
+                 item:1,
+                 slideMove:1,
+               }
+         }
+     ],
         onBeforeSlide: function (el) {
             $('#current').text(el.getCurrentSlideCount());
         }
