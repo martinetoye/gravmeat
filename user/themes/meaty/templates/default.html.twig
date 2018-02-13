@@ -1,18 +1,43 @@
 {% extends 'partials/base.html.twig' %}
 {% set collection = page.collection() %}
-
-{% block banner %}
-    <div class="col-xs-12">
-        <h1>{{ site.description}}</h1>
-        {% if page.collection.params.taxonomies %}
-            <h2>Tagged with "{{ page.collection.params.taxonomies.tag.0 }}"</h2>
-        {% else %}
-            <h2>{{ site.title }}</h2>
-        {% endif %}
-
-    </div>
-{% endblock %}
-
 {% block content %}
-    {{ page.content }}
+
+<div class="blog">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="blog__title">Blog</h1>
+      </div><!-- End Column -->
+    </div><!-- End Row -->
+
+    <div class="row">
+      <div class="col-md-12">
+        {{ page.content }}
+      </div><!-- End Column -->
+    </div><!-- End Row -->
+
+    <div class="row">
+      <div class="col-md-12">
+
+            <div class="blog__teasers">
+                {% for post in collection %}
+                    {% include 'partials/teaser.html.twig' %}
+                {% endfor %}
+            </div>
+
+      </div><!-- End Column -->
+    </div><!-- End Row -->
+
+    <div class="row">
+      <div class="col-md-12">
+            {% if config.plugins.pagination.enabled and collection.params.pagination %}
+                {% include 'partials/pagination.html.twig' with {'pagination':collection.params.pagination} %}
+            {% endif %}
+      </div><!-- End Column -->
+    </div><!-- End Row -->
+
+  </div><!-- End Container -->
+</div><!-- End Blog -->
+
 {% endblock %}
