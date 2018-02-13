@@ -43,7 +43,7 @@ links:
   - title: Blog
     url: /blog
   - title: Say Hi
-    url: /contact
+    url: '#contact'
   - title: Hire Me
     url: /
     class: btn btn__blue
