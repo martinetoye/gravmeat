@@ -1,0 +1,17 @@
+<div class="contact__modular">
+  <div class="container">
+    <div class="row">
+
+        <div class="col-md-offset-2 col-md-8">
+            <div class="contact__modular--form">
+                <h2 class="contact__modular--form--title">{{ page.title }}</h2>
+                <p>{{ page.header.description }}</p>
+                {{ page.content }}
+                {% include "forms/form.html.twig" %}
+                <div class="form-result" id="form-result"></div>
+            </div>
+        </div><!-- End Column -->
+
+    </div><!-- End Row -->
+  </div><!-- End Container -->
+</div><!-- End Container Modular -->

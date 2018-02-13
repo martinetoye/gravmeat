@@ -11,5 +11,6 @@ content:
             - _coffee
             - _portfolio
             - _testimonials
+            - _contact
 ---
 
