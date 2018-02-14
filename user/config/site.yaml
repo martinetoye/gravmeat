@@ -2,7 +2,8 @@ title: Martinetoye
 default_lang: en
 author:
   name: 'Martin Toye'
-  email: martin.toye@me.com
+  email: 'martin.toye@me.com'
+  gravatar: 'https://s.gravatar.com/avatar/d0ac991626368c511b1a101dc9010443?s=80'
 taxonomies:
   - tag
 metadata:
