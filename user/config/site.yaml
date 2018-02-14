@@ -1,52 +1,83 @@
 title: Martinetoye
-description: "The  guide to growing up, you moron"
+default_lang: en
 author:
-  name: Mike Crittenden
-  email: 'mikecrittenden@gmail.com'
+  name: 'Martin Toye'
+  email: martin.toye@me.com
+taxonomies:
+  - tag
 metadata:
-    description: 'A ruthless, insulting guide to being an adult and doing grown up things'
-taxonomies: [tag]
-
-# Owner/author information
+  description: 'A ruthless, insulting guide to being an adult and doing grown up things'
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+blog:
+  route: /blog
+description: 'The  guide to growing up, you moron'
 owner:
-  name:           Martin Toye
-  email:          martin.toye@me.com
-  description:    Professional Front End Developer
+  name: 'Martin Toye'
+  email: martin.toye@me.com
+  description: 'Professional Front End Developer'
   phone: '07864873669'
-  address: Banstead, Surrey
+  address: 'Banstead, Surrey'
   image: /user/themes/meaty/images/me.png
-  # Social networking links used in footer. Update and remove as you like.
 social:
-  - title: Facebook
-    url: https://facebook.com/mtoye1
+  -
+    title: Facebook
+    url: 'https://facebook.com/mtoye1'
     class: facebook
-  - title: twitter
-    url: https://twitter.com/martinetoye
+  -
+    title: twitter
+    url: 'https://twitter.com/martinetoye'
     class: twitter
-  - title: Instagram
-    url: https://instagram.com/martinetoye
+  -
+    title: Instagram
+    url: 'https://instagram.com/martinetoye'
     class: instagram
-  - title: github
-    url: https://github.com/martinetoye
+  -
+    title: github
+    url: 'https://github.com/martinetoye'
     class: github
-
 logo: /user/themes/meaty/images/logo.png
-
-# For external links add external: true
 links:
-  - title: Home
-    url: '../'
-  - title: About
+  -
+    title: Home
+    url: ../
+  -
+    title: About
     url: '../#about'
-  - title: Portfolio
+  -
+    title: Portfolio
     url: '../#portfolio'
-  - title: Blog
+  -
+    title: Blog
     url: ../blog
-  - title: Say Hi
+  -
+    title: 'Say Hi'
     url: '../#contact'
-  - title: Hire Me
+  -
+    title: 'Hire Me'
     url: /
-    class: btn btn__blue
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+    class: 'btn btn__blue'
+include:
+  - .htaccess
+exclude:
+  - lib
+  - config.rb
+  - Gemfile
+  - Capfile
+  - Gemfile.lock
+  - config
+  - log
+  - Rakefile
+  - Rakefile.rb
+  - tmp
+  - less
+  - '*.sublime-project'
+  - '*.sublime-workspace'
+  - test
+  - spec
+  - Gruntfile.js
+  - package.json
+  - node_modules

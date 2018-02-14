@@ -1,0 +1,23 @@
+<div class="blog__teasers">
+
+  <div class="row">
+
+    <div class="col-md-5">
+              {% if post.header.featured %}
+                      <img class="img-responsive" src="{{ post.media[post.header.featured].url }}"/>
+              {% else %}
+                      <div class="teaser__summary">{{ post.summary }}</div>
+              {% endif %}
+    </div><!-- End Column -->
+
+    <div class="col-md-7">
+      <a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">
+        <h2 class="blog__teasers--title">{{ post.title }}</h2>
+      </a>
+      <p>{{ post.summary(500) }}</p>
+      <a class="blog__teasers--readmore" href="{{ post.url }}">Read More...</a>
+    </div><!-- End Column -->
+
+  </div><!-- End Row -->
+
+</div><!-- End blog teasers -->

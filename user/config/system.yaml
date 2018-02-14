@@ -1,3 +1,4 @@
+param_sep: '-'
 absolute_urls: false
 
 home:

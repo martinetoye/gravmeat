@@ -6,6 +6,6 @@ content:
     order:
         by: date
         dir: desc
-    limit: 50
+    limit: 5
     pagination: true
 ---
