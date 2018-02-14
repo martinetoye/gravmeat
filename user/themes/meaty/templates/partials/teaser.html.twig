@@ -2,39 +2,22 @@
 
   <div class="row">
 
-    <div class="col-md-12">
+    <div class="col-md-5">
+              {% if post.header.featured %}
+                      <img class="img-responsive" src="{{ post.media[post.header.featured].url }}"/>
+              {% else %}
+                      <div class="teaser__summary">{{ post.summary }}</div>
+              {% endif %}
+    </div><!-- End Column -->
+
+    <div class="col-md-7">
       <a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">
         <h2 class="blog__teasers--title">{{ post.title }}</h2>
       </a>
-    </div><!-- End Column -->
-
-    <div class="col-md-2">
-        <time class="blog__teasers--date" datetime="{{post.date | date(site.date_long ) }}">
-          <span class="blog__teasers--date--day">
-            {{ post.date | date ("d") }}
-          </span>
-          <span class="blog__teasers--date-monthyear">
-            {{ post.date | date("M Y") }}
-          </span>
-        </time><!-- End Date -->
+      <p>{{ post.summary(500) }}</p>
+      <a class="blog__teasers--readmore" href="{{ post.url }}">Read More -></a>
     </div><!-- End Column -->
 
   </div><!-- End Row -->
 
 </div><!-- End blog teasers -->
-
-
-
-    <div class="col-sm-8">
-
-
-        {% if post.header.featured %}
-                <div class="teaser__summary"><img src="{{ post.media[post.header.featured].url }}"/></div>
-        {% else %}
-                <div class="teaser__summary">{{ post.summary }}</div>
-        {% endif %}
-
-
-        {% for tag in post.taxonomy.tag %}<span class="label label-{{tag}}"><a href="{{ base_url_absolute }}/tag{{ config.system.param_sep }}{{ tag }}">{{ tag }}</a></span>{%if not loop.last %} {% endif %}{% endfor %}
-    </div>
-</div>

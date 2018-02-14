@@ -1,0 +1,14 @@
+
+        Tags - {% for tag in post.taxonomy.tag %}<span class="blog__teasers--label label-{{tag}}">{{ tag }}</span>{%if not loop.last %} {% endif %}{% endfor %}
+
+
+
+                <time class="blog__teasers--date" datetime="{{post.date | date(site.date_long ) }}">
+                  <span class="blog__teasers--date--day">
+                    {{ post.date | date ("d") }}
+                  </span>
+                  <span class="blog__teasers--date-monthyear">
+                    {{ post.date | date("M Y") }}
+                  </span>
+                </time><!-- End Date -->
+           -  {{ post.header.author }}

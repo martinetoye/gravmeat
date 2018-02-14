@@ -35,15 +35,15 @@ logo: /user/themes/meaty/images/logo.png
 # For external links add external: true
 links:
   - title: Home
-    url: '#'
+    url: '../'
   - title: About
-    url: '#about'
+    url: '../#about'
   - title: Portfolio
-    url: '#portfolio'
+    url: '../#portfolio'
   - title: Blog
-    url: /blog
+    url: ../blog
   - title: Say Hi
-    url: '#contact'
+    url: '../#contact'
   - title: Hire Me
     url: /
     class: btn btn__blue
