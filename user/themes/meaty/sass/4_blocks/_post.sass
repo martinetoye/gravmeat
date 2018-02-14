@@ -1,16 +1,39 @@
 .post__heading
-    background: rgb(61,168,193) /* Old browsers */
-    background: -moz-linear-gradient(left, rgba(61,168,193,1) 0%, rgba(47,100,178,1) 61%)/* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(61,168,193,1) 0%,rgba(47,100,178,1) 61%)/* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(61,168,193,1) 0%,rgba(47,100,178,1) 61%)/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3da8c1', endColorstr='#2f64b2',GradientType=1 )/* IE6-9 */
-.post__heading--title
-    color: $white
-
-.post__heading--breadcrumb
-  text-align: right
-
-//Post Meta
-.post__meta--wrapper
-  background: $grey
   padding: 20px 0
+  background: rgb(61,168,193) /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(61,168,193,1) 0%, rgba(47,100,178,1) 61%)/* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(61,168,193,1) 0%,rgba(47,100,178,1) 61%)/* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(61,168,193,1) 0%,rgba(47,100,178,1) 61%)/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3da8c1', endColorstr='#2f64b2',GradientType=1 )/* IE6-9 */
+  position: relative
+.post__heading--title
+  color: $white
+  margin: 0 0 50px 0
+.post__heading--author
+  margin: 5px 0
+  color: $white
+  +mq('tablet')
+    position: absolute
+    left: 0
+    bottom: 0
+    padding: 5px 0
+  & strong
+    color: $black
+.post__heading--breadcrumb
+  display: none
+  color: $white
+  +mq('tablet')
+    position: absolute
+    right: 0
+    bottom: 6px
+    padding: 5px 0
+    display: block
+  & a
+    color: $white
+  & strong
+    color: $black
+
+//Post Comments
+.post__comments
+  background: $grey
+  padding: 20px 10px

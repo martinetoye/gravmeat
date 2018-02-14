@@ -6,8 +6,8 @@
     <div class="row">
       <div class="col-md-12">
         <h1 class="post__heading--title">{{ page.title }}</h1>
-        <p class="post__heading--title">By <strong>{{ page.header.author }}</strong> On  <strong><time datetime="{{ page.date | date(site.date_long) }}">{{ page.date | date("d M Y") }}</time></strong></p>
-        <p class="post__heading--breadcrumb"><a href="{{ home_url}}">Home</a> / <a href="../blog">Blog</a> / {{ page.title }}</p>
+        <span class="post__heading--author">By <strong>{{ site.author.name }}</strong> On  <strong><time datetime="{{ page.date | date(site.date_long) }}">{{ page.date | date("d M Y") }}</time></strong></span>
+        <span class="post__heading--breadcrumb"><a href="{{ home_url}}">Home</a> / <a href="../blog">Blog</a> /<strong> {{ page.title }}</strong></span>
       </div><!-- End Column -->
     </div><!-- End Row -->
   </div><!-- End Container -->
@@ -28,9 +28,13 @@
 <div class="post__meta">
   <div class="container">
     <div class="row">
-        <div class="post__meta--wrapper">
-          <p>Test</p>
+      <div class="col-md-12">
+        <div class="post__comments">
+            {% if config.plugins.jscomments.enabled %}
+              {{ jscomments()|raw }}
+            {% endif %}
         </div>
+      </div><!-- End Column -->
     </div><!-- End Row -->
   </div><!-- End Container -->
 </div><!-- End Post Meta -->
