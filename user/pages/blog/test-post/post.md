@@ -6,7 +6,7 @@ taxonomy:
     tag:
         - test
         - post
-        - chocolatwe
+        - chocolate
         - biscuit
 author: 'Martin Toye'
 ---

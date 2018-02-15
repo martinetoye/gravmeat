@@ -25,15 +25,29 @@
   </div><!-- End Container -->
 </div><!-- End Post Content -->
 
+
 <div class="post__meta">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="post__comments">
+        <div class="post__meta--tags">
+          Tags -
+            {% for tag in page.taxonomy.tag %}
+              <span class="label"><a href="../search/{{ tag }}" data-toggle="tooltip" title="Posts tagged with {{ tag }}" rel="tag">{{ tag }}</a></span>
+            {% endfor %}
+        </div>
+      </div><!-- End Column -->
+    </div><!-- End Row -->
+  </div><!-- End Container -->
+</div><!-- End Post Content -->
+
+<div class="post__comments">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
             {% if config.plugins.jscomments.enabled %}
               {{ jscomments()|raw }}
             {% endif %}
-        </div>
       </div><!-- End Column -->
     </div><!-- End Row -->
   </div><!-- End Container -->
@@ -44,19 +58,6 @@
 
 </div><!-- End Post -->
 
-  <div class="row">
-    <div class="col-xs-12">
-      <div class="post__header">
-        <div class="post__title">
-          <p>
-            {% for tag in page.taxonomy.tag %}
-              <span class="label"><a href="{{ base_url_absolute }}/tag:{{ tag }}" data-toggle="tooltip" title="Posts tagged with {{ tag }}" rel="tag">{{ tag }}</a></span>
-            {% endfor %}
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
 
