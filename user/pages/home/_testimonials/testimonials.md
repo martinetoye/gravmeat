@@ -2,16 +2,7 @@
 title: 'What <span>Clients</span> say'
 
 testimonials:
-  - title: Kim Toye
-    company: Kims Norfolk Kitchen
-    description: blah blah blah
-  - title: Asma Jacob
-    company: Achievable Journey to Inspire change
-    description: blah blach ba;lkjsd;lfkjas;lfkdj. sf
-  - title: Asma Jacob
-    company: Achievable Journey to Inspire change
-    description: blah blach ba;lkjsd;lfkjas;lfkdj. sf
-  - title: Asma Jacob
-    company: Achievable Journey to Inspire change
-    description: blah blach ba;lkjsd;lfkjas;lfkdj. sf
+  - title: Olivia Griffin
+    company: Malookoo Dance Fitness
+    description: Martin was amazing, really listened to what I needed, understood my vision for the website and totally created what I envisaged from scratch. His support and reliability has been incrediable and I would definitley use him again and 100% recommned him.
 ---
