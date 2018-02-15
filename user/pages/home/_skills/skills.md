@@ -4,28 +4,28 @@ title: What <span>Skills</span> i have
 skills:
   - title: PHP
     class: server
-    description: Test php skill
+    description:
   - title: HTML5
     class: html5
-    description: Test html skill
+    description:
   - title: CSS3
     class: css3
-    description: Test css skill
+    description:
   - title: Git
     class: git
-    description: Git Test skill
+    description:
   - title: wordpress
     class: wordpress
-    description: Test wordpress 
+    description:
   - title: grav
     class: grav
-    description: Test grav skill
+    description:
   - title: twig
     class: code
-    description: Test Twig Skill
+    description:
   - title: Learning more
     class: university
-    description: Always learning more skills.
+    description:
 ---
 
 I have a particular set of skills. I will find you. I will kill you.

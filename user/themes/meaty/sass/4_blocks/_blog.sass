@@ -5,10 +5,23 @@
     background: -webkit-linear-gradient(left, rgba(61,168,193,1) 0%,rgba(47,100,178,1) 61%)/* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to right, rgba(61,168,193,1) 0%,rgba(47,100,178,1) 61%)/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3da8c1', endColorstr='#2f64b2',GradientType=1 )/* IE6-9 */
+    position: relative
+    padding: 20px 0
 .blog__heading--title
+    margin: 0 0 50px 0
     color: $white
 .blog__heading--breadcrumb
-  text-align: right
+    margin: 5px 0
+    display: none
+    color: $white
+    +mq('tablet')
+      float: right
+      padding: 5px 0
+      display: block
+    & a
+      color: $white
+    & strong
+      color: $black
 //Teasers
 .blog__teasers
     padding: 20px 0
