@@ -3,25 +3,26 @@
   +mq('tablet')
       columns:  2
 .contact__modular
-  padding: 80px
   position: relative
   height: 0
   background: $grey
   text-align: center
+  +mq('tablet')
+    padding-bottom: 20px
 .contact__modular p
   text-align: center
 .contact__modular--form--title
   margin: 5px 0
 .contact__modular--form
   background: $white
-  position: absolute
-  top: -130px
-  left: 0
-  right: 0
   z-index: 5
   padding: 40px 40px
   border-radius: 5px
-
+  +mq('tablet')
+    position: absolute
+    top: -130px
+    left: 0
+    right: 0
 .contact__modular .form-label
   display: none
 .contact__modular .form-field
