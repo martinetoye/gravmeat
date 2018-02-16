@@ -7,7 +7,7 @@
                 <h2 class="contact__modular--form--title">{{ page.title }}</h2>
                 <p>{{ page.header.description }}</p>
                 {{ page.content }}
-                {% include "forms/form.html.twig" %}
+                          {% include "forms/form.html.twig" with { form: forms('contact-home') } %}
                 <div class="form-result" id="form-result"></div>
             </div>
         </div><!-- End Column -->

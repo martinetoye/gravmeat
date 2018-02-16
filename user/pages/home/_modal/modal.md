@@ -1,8 +1,7 @@
 ---
-title: Say Hi
-description: If you are hiring and think I would be interested get in touch. Maybe you have a project you need help with.
+title: modal
 form:
-    name: contact-home
+    name: hire-me
     action: /home
     template: form-messages
     refresh_prevention: true
@@ -14,7 +13,7 @@ form:
                       type: column
                       fields:
                           firstname:
-                              label: name
+                              label: Name
                               placeholder: Enter Your Name
                               autocomplete: on
                               type: text
@@ -23,7 +22,7 @@ form:
                                   pattern: '[A-Za-z]{3,}'
 
                           email:
-                              label: email
+                              label: Email
                               placeholder: Enter Email
                               autocomplete: on
                               type: email
@@ -42,41 +41,36 @@ form:
                               validate:
                                   required: true
 
-                          subject:
-                              label: subject
-                              placeholder: Subject
-                              autocomplete: false
-                              type: text
           message:
-              label: message
+              label: Message
               placeholder: Enter Your message
               autocomplete: false
               type: textarea
 
     buttons:
         - type: submit
-          value: Submit
+          value: Send
           classes: btn btn__blue
 
     process:
         - email:
             from: "{{ config.plugins.email.from }}"
             to: "{{ form.value.email }}"
-            subject: "Contact Form"
+            subject: "Hire me Form Filled Out"
             body: "{% include 'forms/data.html.twig' %}"
         - save:
-            fileprefix: contact-
+            fileprefix: hire-
             dateformat: Ymd-His-u
             extension: txt
             body: "{% include 'forms/data.txt.twig' %}"
+            content_type: 'text/plain'
         - message: Thank you for getting in touch!
         - reset: true
 ---
-
 <script>
 $(document).ready(function(){
-    $('#form-result').hide();
-    var form = $('#contact-home');
+    $('#hire-form-result').hide();
+    var form = $('#hire-me');
     form.submit(function(e) {
         // prevent form submission
         e.preventDefault();
@@ -89,9 +83,10 @@ $(document).ready(function(){
             data: form.serialize(),
             success: function(result) {
                 // Inject the result in the HTML
-                $('#form-result').show();
-                $('#form-result').html(result);
+                $('#hire-form-result').show();
+                $('#hire-form-result').html(result);
                 form.hide();
+                $('.modal').delay(100000).toggleClass('is-visible');
             }
         });
     });

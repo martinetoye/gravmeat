@@ -6,6 +6,7 @@ content:
     order:
         custom:
             - _banner
+            - _modal
             - _about
             - _skills
             - _coffee
