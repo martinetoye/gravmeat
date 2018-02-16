@@ -7,7 +7,7 @@ author:
 taxonomies:
   - tag
 metadata:
-  description: 'martinetoye | Professional frontend developer'
+  description: 'A ruthless, insulting guide to being an adult and doing grown up things'
 summary:
   enabled: true
   format: short
@@ -23,7 +23,6 @@ owner:
   phone: '07864873669'
   address: 'Banstead, Surrey'
   image: /user/themes/meaty/images/me.png
-  resume: 'https://drive.google.com/open?id=1RV62LQmfKAkxag0HKvDd6pTNyGx5LKM5'
 social:
   -
     title: Facebook
@@ -55,6 +54,10 @@ links:
   -
     title: 'Say Hi'
     url: '../#contact'
+  -
+    title: 'Hire Me'
+    url: /
+    class: 'btn btn__blue'
 include:
   - .htaccess
 exclude:
