@@ -1,5 +1,5 @@
-param_sep: '-'
 absolute_urls: false
+force_ssl: false
 
 home:
   alias: '/home'
