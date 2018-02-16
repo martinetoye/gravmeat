@@ -6,12 +6,10 @@ to_name: Martin Toye
 mailer:
   engine: smtp
   smtp:
-    server: mailtrap.io
-    port: 2525
-    encryption: none
-    user: 'b0ebbfd77a5207'
-    password: '782f7cf05d0e14'
-  sendmail:
-    bin: '/usr/sbin/sendmail'
+    server: mail.martinetoye.com
+    port: 465
+    encryption: tls
+    user: 'hello@martinetoye.com'
+    password: ',^y6A6Sw=me)'
 content_type: text/html
-debug: false
+debug: true
