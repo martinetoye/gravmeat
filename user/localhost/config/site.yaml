@@ -23,6 +23,7 @@ owner:
   phone: '07864873669'
   address: 'Banstead, Surrey'
   image: /user/themes/meaty/images/me.png
+  resume: 'https://drive.google.com/open?id=1RV62LQmfKAkxag0HKvDd6pTNyGx5LKM5'
 social:
   -
     title: Facebook
@@ -51,6 +52,9 @@ links:
   -
     title: Portfolio
     url: '../#portfolio'
+  -
+    title: Blog
+    url: '/blog'
   -
     title: 'Say Hi'
     url: '../#contact'
