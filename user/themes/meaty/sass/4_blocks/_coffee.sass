@@ -1,5 +1,5 @@
 .coffee
-  padding: 80px 0
+  padding: 35px
   background: rgb(61,168,193) /* Old browsers */
   background: -moz-linear-gradient(left, rgba(61,168,193,0.9) 0%, rgba(47,100,178,1) 61%)/* FF3.6-15 */
   background: -webkit-linear-gradient(left, rgba(61,168,193,0.9) 0%,rgba(47,100,178,0.9) 61%), url('../images/coffeebk.jpg') no-repeat/* Chrome10-25,Safari5.1-6 */
@@ -7,6 +7,15 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3da8c1', endColorstr='#2f64b2',GradientType=1 )/* IE6-9 */
   color: $white
   background-size: 100%
+  +mq('tablet')
+    padding: 80px 0
+    background: rgb(61,168,193) /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(61,168,193,0.9) 0%, rgba(47,100,178,1) 61%)/* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(61,168,193,0.9) 0%,rgba(47,100,178,0.9) 61%), url('../images/coffeebk.jpg') no-repeat/* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(61,168,193,0.9) 0%,rgba(47,100,178,0.9) 61%), url('../images/coffeebk.jpg') no-repeat/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3da8c1', endColorstr='#2f64b2',GradientType=1 )/* IE6-9 */
+    color: $white
+    background-size: 100%
 
 .coffee__cups
   color: $white
