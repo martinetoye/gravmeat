@@ -59,9 +59,6 @@ form:
           classes: btn btn__blue
 
     process:
-        - email:
-            subject: "[Site Contact Form] {{ form.value.name|e }}"
-            body: "{% include 'forms/data.html.twig' %}"
         - save:
             fileprefix: contact-
             dateformat: Ymd-His-u
