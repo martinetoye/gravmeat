@@ -55,10 +55,6 @@ links:
   -
     title: 'Say Hi'
     url: '../#contact'
-  -
-    title: 'Hire Me'
-    url: /
-    class: 'btn btn__blue'
 include:
   - .htaccess
 exclude:
