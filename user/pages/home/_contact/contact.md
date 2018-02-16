@@ -89,7 +89,7 @@ $(document).ready(function(){
                 // Inject the result in the HTML
                 $('#form-result').show();
                 $('#form-result').html(result);
-                $('#contact-home').hide();
+                form.hide();
             }
         });
     });
