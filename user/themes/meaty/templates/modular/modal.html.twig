@@ -1,0 +1,21 @@
+<div class="modal">
+    <div class="modal-overlay modal-toggle"></div>
+    <div class="modal-wrapper modal-transition">
+      <div class="modal-header">
+        <button class="modal-close modal-toggle"><svg class="icon-close icon" viewBox="0 0 32 32"><use xlink:href="#icon-close"></use></svg></button>
+        <h2 class="modal-heading">Hire</h2>
+          <i class="modal__toggle modal-close fa fa-times"></i>
+      </div>
+      {{ page.content }}
+      <div class="modal-body">
+        <div class="modal-content">
+          <p>
+          I am always open to new challenges and projects. Drop me an email and let's chat
+          {% include "forms/form.html.twig" with { form: forms('hire-me') } %}
+
+          <div class="form-result" id="hire-form-result"></div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -57,8 +57,7 @@ links:
     url: '../#contact'
   -
     title: 'Hire Me'
-    url: /
-    class: 'btn btn__blue'
+    class: 'btn btn__blue modal__toggle'
 include:
   - .htaccess
 exclude:

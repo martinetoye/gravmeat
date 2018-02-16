@@ -57,11 +57,11 @@ links:
     url: '/blog'
   -
     title: 'Say Hi'
-    url: '../#contact'
+    url: '#contact'
   -
     title: 'Hire Me'
-    url: /
-    class: 'btn btn__blue'
+    url: '#contact'
+    class: 'btn btn__blue modal__toggle'
 include:
   - .htaccess
 exclude:

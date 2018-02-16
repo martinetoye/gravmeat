@@ -19,7 +19,7 @@
             <ul class="header__menu--nav">
                 {% for mitem in site.links %}
                 <li class="header__menu--nav--item">
-                  <a href="{{ mitem.url }}" class="testclass {{ mitem.class }}">{{ mitem.title }}</a>
+                  <a href="{{ mitem.url }}" id="{{ mitem.id }}" class="{{ mitem.class }}">{{ mitem.title }}</a>
                 </li>
                 {% endfor %}
             </ul>

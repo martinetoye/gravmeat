@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
   //Menu Open
-  $(".hamburger").on("click", function(){
+$(".hamburger").on("click", function(){
         $(".hamburger").toggleClass("change");
         $(".header__menu--mobile").toggleClass("open");
       });
@@ -16,14 +16,17 @@ $('a.testclass').on('click', function(event){
   return false
   event.preventDefault();
 });
-
-
-
 });//End
 
+$(document).ready(function() {
+  // Quick & dirty toggle to demonstrate modal toggle behavior
+$('.modal__toggle').click(function(e) {
+  e.preventDefault();
+  $('.modal').toggleClass('is-visible');
+  return false;
+});
 
-
-
+});
 $(document).ready(function() {
     var autoplaySlider = $('#lightSlider').lightSlider({
         auto:true,
