@@ -52,6 +52,9 @@ links:
     title: Portfolio
     url: '../#portfolio'
   -
+    title: 'Blog'
+    url: '../blog'
+  -
     title: 'Say Hi'
     url: '../#contact'
   -
