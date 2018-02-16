@@ -37,7 +37,7 @@ $(document).ready(function() {
          {
              breakpoint:800,
              settings: {
-                 item:3,
+                 item:1,
                  slideMove:1,
                  slideMargin:1,
                }
