@@ -46,18 +46,23 @@ links:
   -
     title: Home
     url: ../
+    class: 'mnav'
   -
     title: About
     url: '../#about'
+    class: 'mnav'
   -
     title: Portfolio
     url: '../#portfolio'
+    class: 'mnav'
   -
     title: Blog
     url: '/blog'
+    class: 'mnav'
   -
     title: 'Say Hi'
     url: '#contact'
+    class: 'mnav'
   -
     title: 'Hire Me'
     url: '#contact'
