@@ -5,7 +5,7 @@ $(".hamburger").on("click", function(){
         $(".header__menu--mobile").toggleClass("open");
       });
 //links for Header Menu
-$('a.testclass').on('click', function(event){
+$('a.mnav').on('click', function(event){
   $(".hamburger").toggleClass("change");
   $(".header__menu--mobile").toggleClass("open");
   var href = $(this).attr('href');

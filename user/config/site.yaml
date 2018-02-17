@@ -46,15 +46,19 @@ links:
   -
     title: Home
     url: ../
+    class: mnav
   -
     title: About
     url: '../#about'
+    class: 'mnav'
   -
     title: Portfolio
     url: '../#portfolio'
+    class: 'mnav'
   -
     title: 'Say Hi'
     url: '../#contact'
+    class: 'mnav'
   -
     title: 'Hire Me'
     class: 'btn btn__blue modal__toggle'
