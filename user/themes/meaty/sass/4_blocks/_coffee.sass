@@ -18,10 +18,12 @@
     background-size: 100%
 
 .coffee__cups
+  display: none
   color: $white
   text-align: center
   position: relative
-
+  +mq('tablet')
+    display: block
 .coffee__cups i
   font-size: 30px
 .coffee__cups p
