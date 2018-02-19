@@ -27,5 +27,3 @@ skills:
     class: university
     description:
 ---
-
-I have a particular set of skills. I will find you. I will kill you.
