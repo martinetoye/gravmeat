@@ -10,16 +10,7 @@
       </div><!-- End Column -->
       <div class="portfolio__featured--imgs">
       {% for pitem in page.header.portfolio %}
-        {% if mobile_detect() == 'phone' %}
-            {% if loop.index0 is divisibleby(2) %}
-              <div class="row">
-            {% endif %}
-        {% else %}
-            {% if loop.index0 is divisibleby(3) %}
-              <div class="row">
-            {% endif %}
-        {% endif %}
-        <div class="col-xs-6 col-md-4">
+        <div class="col-xs-12">
           <div class="portfolio__featured--img">
           <a href="{{ pitem.url }}" target="_blank">
               <img class="img-responsive portfolio__featured--img--img" src="{{ pitem.img }}">
@@ -30,17 +21,6 @@
           </a>
         </div>
       </div>
-
-        {% if mobile_detect() == 'phone' %}
-          {% if loop.index is divisibleby(2) or loop.last %}
-            </div>
-          {% endif %}
-        {% else %}
-          {% if loop.index is divisibleby(3) or loop.last %}
-            </div>
-          {% endif %}
-        {% endif %}
-
 
       {% endfor %}
     </div>
