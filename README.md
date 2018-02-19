@@ -1,4 +1,4 @@
-#My Portfolio Website
+# My Portfolio Website
 
 This is my repository for my portfolio website. This is the first time I have used [Grav](https://getgrav.org/) as the core of the project. Grav is a flat file CMS that is build to be fast.  
 
@@ -35,7 +35,7 @@ You can download a **ready-built** package from this repository using the downlo
 1. Clone the Project repository from [https://github.com/martinetoye/gravmeat]() to a folder in the webroot of your server, e.g. `~/webroot/gravmeat`. Launch a **terminal** or **console** and navigate to the webroot folder:
    ```
    $ cd ~/webroot
-   $ git clone https://github.com/getgrav/grav.git
+   $ git clone https://github.com/martinetoye/gravmeat.git
    ```
 
 # Contributing
