@@ -8,9 +8,10 @@
       <div class="col-md-12">
           <h2 class="portfolio__heading">{{ page.title }}</h2>
       </div><!-- End Column -->
-      <div class="portfolio__featured--imgs">
+        <div class="col-md-12">
+      <div class="portfolio__featured--imgs portfolio__columns">
       {% for pitem in page.header.portfolio %}
-        <div class="col-xs-12">
+        <div class="portfolio__column">
           <div class="portfolio__featured--img">
           <a href="{{ pitem.url }}" target="_blank">
               <img class="img-responsive portfolio__featured--img--img" src="{{ pitem.img }}">
@@ -24,6 +25,7 @@
 
       {% endfor %}
     </div>
+  </div>
     </div><!-- End Row -->
   </div><!-- End Container -->
 </div>
