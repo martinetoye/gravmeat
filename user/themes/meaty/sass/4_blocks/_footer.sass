@@ -5,9 +5,11 @@
   background: linear-gradient(to right, rgba(61,168,193,1) 0%,rgba(47,100,178,1) 61%)/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3da8c1', endColorstr='#2f64b2',GradientType=1 )/* IE6-9 */
   padding-bottom: 20px
-  padding-top: 250px
+  padding-top: 20px
   color: $white
   z-index: 2
+  +mq('tablet')
+    padding-top: 250px
 
 .footer
   background: rgb(61,168,193) /* Old browsers */

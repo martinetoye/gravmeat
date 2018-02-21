@@ -8,7 +8,7 @@ portfolio:
 
     -   title: Gurbeck Country Foods
         img: user/pages/home/_portfolio/gurbeck screenshot.png
-        url: https://gurbeckcountryfoods.co.uk
+        url: http://gurbeckcountryfoods.co.uk
         description: Wordpress Custom Theme
 
     -   title: Achievable Journey
