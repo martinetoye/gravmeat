@@ -9,7 +9,7 @@ var autoprefixer = require('gulp-autoprefixer');
 gulp.task('serve', ['sass'], function() {
 
     browserSync.init(["css/*.css", "js/*.js", "sass/**/*.sass","templates/**/*.twig"],{
-    proxy: "localhost:80", // makes a proxy for localhost
+    proxy: "localhost:8888", // makes a proxy for localhost
     browser: "google chrome"
 });
 });
@@ -35,8 +35,7 @@ gulp.task('default', ['mamp','sass', 'serve'], function() {
 ================================ */
 var options = {};
 options.user = 'martintoye';
-options.password = 'Me11isa10';
-options.port = 80;
+options.port = 8888;
 options.site_path = '/Users/martintoye/Documents/GitHub/gravmeat/'; // something like /Users/username/sites/mymampsite
 
 // Modules
