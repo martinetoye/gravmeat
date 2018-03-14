@@ -1,5 +1,5 @@
 absolute_urls: false
-force_ssl: false
+force_ssl: true
 
 home:
   alias: '/home'
