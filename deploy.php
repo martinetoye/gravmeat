@@ -40,7 +40,7 @@
  ____________________________
 |                            |
 | Git Deployment Script v0.1 |
-|      github.com/riodw 2017 |
+|      github.com/riodw 2017 
 |____________________________|
 
 <?php echo $output; ?>
