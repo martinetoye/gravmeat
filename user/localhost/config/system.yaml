@@ -122,7 +122,7 @@ images:
 media:
   enable_media_timestamp: false
   auto_metadata_exif: false
-  upload_limit: 2097152
+  upload_limit: 8388608
 session:
   enabled: true
   timeout: 1800
@@ -132,6 +132,6 @@ session:
   split: true
 gpm:
   releases: stable
-  method: auto
+  method: fopen
   verify_peer: true
   official_gpm_only: true
